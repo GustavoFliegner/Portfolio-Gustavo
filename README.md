@@ -1,1 +1,2 @@
-# Portfolio-Gustavo
+# PortfolioGustavo
+Portfólio desenvolvido para um amigo 

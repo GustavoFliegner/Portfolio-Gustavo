@@ -1,0 +1,21 @@
+{
+  "TextoDestaque": "texto",
+  "Texto": "alasldlasld",
+  "Cards": {
+    "Card1": {
+      "icon": "url",
+      "Texto1": "texto",
+      "Texto2": "texto"
+    },
+    "Card2": {
+      "icon": "https://img.icons8.com/ios/50/paypal.png",
+      "Texto1": "texto",
+      "Texto2": "texto"
+    },
+    "Card4": {
+      "icon": "url",
+      "Texto1": "texto",
+      "Texto2": "texto"
+    }
+  }
+}
