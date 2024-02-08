@@ -1,4 +1,4 @@
-import { Flex, Text, useColorMode } from "@chakra-ui/react";
+import { Flex, Highlight, Link, Text, useColorMode } from "@chakra-ui/react";
 
 export default function Footer() {
   const { colorMode } = useColorMode();
@@ -12,8 +12,17 @@ export default function Footer() {
       bottom="0"
     >
       <Text>
-        Site feito por <a href="https://github.com/Evon09">Jair.js </a>
+        Site feito por{" "}
+        <Link
+          href="https://www.linkedin.com/in/jair-jos%C3%A9-sequeira/"
+          isExternal
+          color={colorMode === "light" ? "light.highlight" : "dark.highlight"}
+        >
+          {" "}
+          Jair.js{" "}
+        </Link>
       </Text>
     </Flex>
   );
 }
+

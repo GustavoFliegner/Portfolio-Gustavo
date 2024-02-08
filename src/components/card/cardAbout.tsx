@@ -5,6 +5,7 @@ import {
   VStack,
   Flex,
   useColorMode,
+  Highlight,
 } from "@chakra-ui/react";
 
 import string from "../../assets/json/about.json";
@@ -12,7 +13,7 @@ import string from "../../assets/json/about.json";
 export function CardAbout() {
   const { colorMode } = useColorMode();
   const imagem = require(`../../assets/img/about/${string.Imagen}`);
-
+  console.log(string.TextoDestaque.split(" ").pop());
   return (
     <Stack
       w="100%"
@@ -61,9 +62,15 @@ export function CardAbout() {
               " ",
               string.TextoDestaque.split(" ").length - 1
             )}
-            <span style={{ color: "#3498db" }}>
+            <Highlight
+              query={[`${string.TextoDestaque.split(" ").pop()}`]}
+              styles={{
+                color:
+                  colorMode === "light" ? "light.highlight" : "dark.highlight",
+              }}
+            >
               {" " + string.TextoDestaque.split(" ").pop()}
-            </span>
+            </Highlight>
           </Text>
 
           <Text fontSize="16">{string.Texto}</Text>

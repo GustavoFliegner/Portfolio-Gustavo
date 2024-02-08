@@ -7,6 +7,7 @@ import {
   ListItem,
   ListIcon,
   Text,
+  Highlight,
 } from "@chakra-ui/react";
 import {
   PhoneIcon,
@@ -38,9 +39,14 @@ export function Contato() {
           " ",
           string.TextoDestaque.split(" ").length - 1
         )}
-        <span style={{ color: "#3498db" }}>
+        <Highlight
+          query={[`${string.TextoDestaque.split(" ").pop()}`]}
+          styles={{
+            color: colorMode === "light" ? "light.highlight" : "dark.highlight",
+          }}
+        >
           {" " + string.TextoDestaque.split(" ").pop()}
-        </span>
+        </Highlight>
       </Text>
       <Stack w="100%" direction={{ base: "column", sm: "row" }}>
         <Flex h="100%" w={{ base: "100%", md: "70%" }} align="center">
@@ -52,7 +58,17 @@ export function Contato() {
             {string.Emdereco ? (
               <ListItem>
                 <ListIcon as={AttachmentIcon} />
-                <span style={{ color: "#3498db" }}>Endereço_</span>{" "}
+                <Highlight
+                  query={["Endereço_"]}
+                  styles={{
+                    color:
+                      colorMode === "light"
+                        ? "light.highlight"
+                        : "dark.highlight",
+                  }}
+                >
+                  Endereço_
+                </Highlight>{" "}
                 {string.Emdereco}
               </ListItem>
             ) : (
@@ -61,7 +77,17 @@ export function Contato() {
             {string.Telefone ? (
               <ListItem>
                 <ListIcon as={PhoneIcon} />
-                <span style={{ color: "#3498db" }}>Telefone_</span> (66)
+                <Highlight
+                  query={["Telefone_"]}
+                  styles={{
+                    color:
+                      colorMode === "light"
+                        ? "light.highlight"
+                        : "dark.highlight",
+                  }}
+                >
+                  Telefone_
+                </Highlight>{" "}
                 {string.Telefone}
               </ListItem>
             ) : (
@@ -70,7 +96,18 @@ export function Contato() {
             {string.Email ? (
               <ListItem>
                 <ListIcon as={EmailIcon} />
-                <span style={{ color: "#3498db" }}>Email_</span> {string.Email}
+                <Highlight
+                  query={["Email_"]}
+                  styles={{
+                    color:
+                      colorMode === "light"
+                        ? "light.highlight"
+                        : "dark.highlight",
+                  }}
+                >
+                  Email_
+                </Highlight>{" "}
+                {string.Email}
               </ListItem>
             ) : (
               <></>
@@ -78,7 +115,18 @@ export function Contato() {
             {string.Site ? (
               <ListItem>
                 <ListIcon as={SearchIcon} />
-                <span style={{ color: "#3498db" }}> Site_</span> {string.Site}
+                <Highlight
+                  query={["Site_"]}
+                  styles={{
+                    color:
+                      colorMode === "light"
+                        ? "light.highlight"
+                        : "dark.highlight",
+                  }}
+                >
+                  Site_
+                </Highlight>{" "}
+                {string.Site}
               </ListItem>
             ) : (
               <></>

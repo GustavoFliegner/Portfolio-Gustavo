@@ -1,4 +1,4 @@
-import { Text, Flex, useColorMode } from "@chakra-ui/react";
+import { Text, Flex, useColorMode, Highlight } from "@chakra-ui/react";
 import { Projeto } from "./projeto";
 
 import string from "../../assets/json/projetos.json";
@@ -26,9 +26,14 @@ export function Projetos() {
           " ",
           string.TextoDestaque.split(" ").length - 1
         )}
-        <span style={{ color: "#3498db" }}>
+        <Highlight
+          query={[`${string.TextoDestaque.split(" ").pop()}`]}
+          styles={{
+            color: colorMode === "light" ? "light.highlight" : "dark.highlight",
+          }}
+        >
           {" " + string.TextoDestaque.split(" ").pop()}
-        </span>
+        </Highlight>
       </Text>
 
       <Text w="100%" h="10%" fontSize="16" overflow="hidden" textAlign="start">

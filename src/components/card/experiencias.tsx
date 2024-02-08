@@ -8,6 +8,7 @@ import {
   Flex,
   useColorMode,
   Stack,
+  Highlight,
 } from "@chakra-ui/react";
 
 import string from "../../assets/json/experiencias.json";
@@ -34,9 +35,14 @@ export function Experiencias() {
           " ",
           string.TextoDestaque.split(" ").length - 1
         )}
-        <span style={{ color: "#3498db" }}>
+        <Highlight
+          query={[`${string.TextoDestaque.split(" ").pop()}`]}
+          styles={{
+            color: colorMode === "light" ? "light.highlight" : "dark.highlight",
+          }}
+        >
           {" " + string.TextoDestaque.split(" ").pop()}
-        </span>
+        </Highlight>
       </Text>
       <Flex h="100%" align="center">
         <Tabs w="100%" isLazy h="100%" orientation="vertical">
@@ -87,13 +93,25 @@ export function Experiencias() {
                       </Flex>
                       <Text>
                         Cargo:
-                        <span style={{ color: "#3498db" }}>
+                        <Highlight
+                          query={[
+                            string.Experiencias[
+                              exp as keyof typeof string.Experiencias
+                            ].cargo,
+                          ]}
+                          styles={{
+                            color:
+                              colorMode === "light"
+                                ? "light.highlight"
+                                : "dark.highlight",
+                          }}
+                        >
                           {
                             string.Experiencias[
                               exp as keyof typeof string.Experiencias
                             ].cargo
                           }
-                        </span>
+                        </Highlight>
                       </Text>
                       <Text>
                         {
