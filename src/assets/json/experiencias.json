@@ -1,16 +1,16 @@
 {
-  "TextoDestaque": "adasd asda",
+  "TextoDestaque": "Experiência profissional",
   "Experiencias": {
     "Experiencia1": {
-      "local": "LOcal Foda",
-      "periodo": "",
-      "cargo": "",
+      "local": "ACS Foto Revelação LTDA",
+      "periodo": "De janeiro de 2021 à abril de 2022",
+      "cargo": "Laboratorista Fotográfico",
       "descricao": ""
     },
     "Experiencia2": {
-      "local": "LOcal Foda",
-      "periodo": "",
-      "cargo": "",
+      "local": "Núcleo de Acessibilidade e Inclusão - Universidade Federal do Mato Grosso",
+      "periodo": "De maio de 2022 à dezembro de 2023",
+      "cargo": "Monitor Inclusivo",
       "descricao": ""
     }
   }

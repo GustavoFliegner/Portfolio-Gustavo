@@ -29,7 +29,7 @@ export function Header() {
       direction={["column", "column", "row"]}
     >
       <Link to="/">
-        <Flex alignItems="center">
+        <Flex alignItems="center" gap={2}>
           <Image
             width="35"
             height="35"
@@ -38,7 +38,7 @@ export function Header() {
           />
           <Flex direction="column">
             <Heading>Gustavo</Heading>
-            <Text>Fliegner</Text>
+            <Heading>Fliegner</Heading>
           </Flex>
         </Flex>
       </Link>
