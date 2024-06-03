@@ -37,13 +37,14 @@ export function CardAbout() {
           border={`10px solid ${
             colorMode !== "light" ? "#ecf0f1" : "#34495e"
           } `}
-          w={{ base: "100%", sm: "30vw" }}
+          w={{ base: "100%", sm: "22vw" }}
           h={{ base: "100%", sm: "30vw" }}
           borderRadius="24px"
         >
           <Image
             objectFit="cover"
             maxW={{ base: "100%", sm: "30vw" }}
+            h={{ base: "100%", sm: "30vw" }}
             src={imagem}
             alt="Gustavo"
             borderRadius="24px"
