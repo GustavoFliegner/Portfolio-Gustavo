@@ -1,20 +1,20 @@
 {
-  "TextoDestaque": "texto",
-  "Texto": "alasldlasld",
+  "TextoDestaque": "Projetos",
+  "Texto": "Curtas-metragens",
   "Projetos": {
     "Projeto1": {
-      "Imagen": "Eu.jpeg",
-      "Titulo": "texto",
-      "Descricao": "texto",
+      "Imagen": "FrameUmbomdia.PNG",
+      "Titulo": "Um Bom Dia",
+      "Descricao": "Um jovem passa seu dia desmotivado, isso muda quando repara nela.",
       "Botao": "Ver ou Assistir",
-      "Link": "url"
+      "Link": "https://youtu.be/Fe7hoZwiJ70?si=trjqkUagaaEzyaqG"
     },
     "Projeto2": {
-      "Imagen": "Eu.jpeg",
-      "Titulo": "texto",
-      "Descricao": "texto",
+      "Imagen": "FrameOlanzapina.jpg",
+      "Titulo": "Olanzapina",
+      "Descricao": "A história segue Jorge, um indivíduo que após sofrer um surto psicótico, decide buscar ajuda profissional e retorna ao seu psiquiatra. A trama se desenrola com a análise da situação de Jorge, na qual ele e seu médico discutem os detalhes do episódio.",
       "Botao": "Ver ou Assistir",
-      "Link": "url"
+      "Link": "https://youtu.be/TYI5W9e9Qqc"
     },
     "Projeto3": {
       "Imagen": "Eu.jpeg",
