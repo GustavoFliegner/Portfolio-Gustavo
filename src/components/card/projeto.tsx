@@ -48,7 +48,7 @@ export function Projeto(prop: ProjetoProps) {
         </CardBody>
 
         <CardFooter>
-          <Link href={`https://${prop.Link}`} isExternal>
+          <Link href={`${prop.Link}`} isExternal>
             <Button variant="solid" color="white" bg="#3498db">
               {prop.Botao}
             </Button>

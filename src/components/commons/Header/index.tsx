@@ -13,6 +13,7 @@ import {
 import { ColorModeSwitcher } from "../../../ColorModeSwitcher";
 import { Link } from "react-router-dom";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import { Separator } from "../separator";
 
 export function Header() {
   const { colorMode } = useColorMode();
@@ -32,7 +33,7 @@ export function Header() {
           <Image
             width="35"
             height="35"
-            src="https://img.icons8.com/color/48/film-reel.png"
+            src="https://img.icons8.com/fluency/48/documentary.png"
             alt="film-reel"
           />
           <Flex direction="column">
@@ -49,7 +50,7 @@ export function Header() {
           align="center"
           display={{ base: "none", md: "flex" }} // Ocultar em telas menores
         >
-          <Breadcrumb separator={<ChevronRightIcon color="gray.500" />}>
+          <Breadcrumb separator={<Separator />}>
             <BreadcrumbItem>
               <BreadcrumbLink href="#home">Home</BreadcrumbLink>
             </BreadcrumbItem>
