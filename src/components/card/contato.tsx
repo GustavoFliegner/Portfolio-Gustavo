@@ -8,6 +8,8 @@ import {
   ListIcon,
   Text,
   Highlight,
+  Icon,
+  Image,
 } from "@chakra-ui/react";
 import {
   PhoneIcon,
@@ -17,6 +19,17 @@ import {
 } from "@chakra-ui/icons";
 import { ContatoForm } from "../form/contatoForm";
 import string from "../../assets/json/contato.json";
+
+function Instagram() {
+  return (
+    <Image
+      width={6}
+      h={6}
+      src="https://img.icons8.com/ios-filled/20/instagram-new--v1.png"
+      alt="instagram-new--v1"
+    />
+  );
+}
 
 export function Contato() {
   const { colorMode } = useColorMode();
@@ -127,6 +140,27 @@ export function Contato() {
                   Site_
                 </Highlight>{" "}
                 {string.Site}
+              </ListItem>
+            ) : (
+              <></>
+            )}
+            {string.Instagram ? (
+              <ListItem>
+                <Flex gap={1} align={"center"}>
+                  <Icon w={20} h={20} as={Instagram}></Icon>
+                  <Highlight
+                    query={["Instagram_"]}
+                    styles={{
+                      color:
+                        colorMode === "light"
+                          ? "light.highlight"
+                          : "dark.highlight",
+                    }}
+                  >
+                    Instagram_
+                  </Highlight>{" "}
+                  {string.Instagram}
+                </Flex>
               </ListItem>
             ) : (
               <></>

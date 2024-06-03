@@ -24,7 +24,7 @@ export default function Home() {
         <CardHome></CardHome>
         <CardAbout></CardAbout>
         <Experiencias></Experiencias>
-        <Qualificacoes></Qualificacoes>
+        {/* <Qualificacoes></Qualificacoes> */}
         <Projetos></Projetos>
         <Gallery></Gallery>
         <Contato></Contato>
